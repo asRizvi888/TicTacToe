@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/home_background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="25dp"
+        android:layout_marginHorizontal="35dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:contentDescription="TODO" />
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/infoBtn"
+        android:text="T    I   C\nT   A   C\nT   O   E"
+        android:textColor="#fff"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_margin="50dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:gravity="center"
+        android:hint="Player  X"
+        android:textColor="#fff"
+        android:textColorHint="@color/cardview_light_background"
+        android:textSize="24dp"
+        android:id="@+id/etX"
+        />
+
+    <EditText
+        android:id="@+id/etO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etX"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:gravity="center"
+        android:hint="Player  O"
+        android:textColor="#fff"
+        android:textColorHint="@color/cardview_light_background"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="75dp"
+        android:id="@+id/btnGo"
+        android:layout_below="@id/etO"
+        android:text="Let's play"
+        android:textSize="24dp"
+        android:backgroundTint="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGo"
+        android:layout_centerHorizontal="true"
+        android:text="© Mohammad Alfi Sharin Rizvi"
+        android:textAlignment="center"
+        android:textColor="#fff" />
+</RelativeLayout>
